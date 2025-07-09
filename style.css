@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* App background with gradient */
+.stApp {
+    background: linear-gradient(135deg, #3d3232 0%, #232526 100%);
+    color: #fff;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Main container */
+.main-container {
+    background: rgba(26, 26, 26, 0.98);
+    padding: 3rem 2rem;
+    border-radius: 18px;
+    margin: 2.5rem auto;
+    max-width: 900px;
+    border: 1px solid #333;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+}
+
+/* Typography */
+.main-title, .main-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 16px rgba(0,0,0,0.12);
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    color: #bdbdbd;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+}
+
+/* Feature cards */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature-card {
+    background: rgba(34, 34, 34, 0.98);
+    padding: 2.2rem 1.5rem;
+    border-radius: 14px;
+    border: 1px solid #333;
+    text-align: center;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+    transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s;
+    cursor: pointer;
+}
+.feature-card:hover {
+    background: #2a2a2a;
+    border-color: #555;
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.22);
+}
+
+.feature-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.feature-description {
+    font-size: 1rem;
+    color: #bdbdbd;
+    line-height: 1.6;
+}
+
+/* Upload section */
+.upload-section {
+    background: rgba(34, 34, 34, 0.98);
+    padding: 2.5rem 1.5rem;
+    border-radius: 14px;
+    margin: 3rem 0;
+    border: 1px solid #333;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+}
+
+.upload-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+
+/* Button styling */
+.stButton > button {
+    background: linear-gradient(90deg, #fff 0%, #e0e0e0 100%);
+    color: #232526;
+    border: none;
+    padding: 0.85rem 2.2rem;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.08rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.18s;
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.07);
+}
+.stButton > button:hover, .stButton > button:focus {
+    background: linear-gradient(90deg, #f0f0f0 0%, #d1d1d1 100%);
+    transform: translateY(-2px) scale(1.01);
+}
+
+/* File uploader */
+.stFileUploader {
+    background: #1a1a1a;
+    border: 2px dashed #555;
+    border-radius: 10px;
+    padding: 2.2rem 1rem;
+    text-align: center;
+    transition: border-color 0.2s;
+}
+.stFileUploader:hover {
+    border-color: #888;
+}
+.stFileUploader label {
+    color: #fff !important;
+}
+.stFileUploader div {
+    color: #fff !important;
+}
+
+/* Response container */
+.response-container {
+    background: #1a1a1a;
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    border: 1px solid #333;
+    border-left: 5px solid #fff;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+}
+
+.response-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+
+/* Messages */
+.success-message {
+    background: #1a3a1a;
+    color: #b6fcb6;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #2d5a2d;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.06);
+}
+.error-message {
+    background: #3a1a1a;
+    color: #ffb3b3;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #5a2d2d;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.06);
+}
+
+/* Input styling */
+.stTextInput input {
+    background: #232526 !important;
+    color: #fff !important;
+    border: 1px solid #555 !important;
+    border-radius: 8px !important;
+    padding: 0.7rem 1rem !important;
+    font-size: 1rem !important;
+    transition: border-color 0.2s;
+}
+.stTextInput input:focus {
+    border-color: #fff !important;
+    outline: none !important;
+}
+
+/* Spinner */
+.stSpinner {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: #888;
+    font-size: 1rem;
+    margin-top: 3rem;
+    letter-spacing: 0.01em;
+}
+
+/* Hide Streamlit elements */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* Markdown override */
+.stMarkdown {
+    color: #fff;
+}
