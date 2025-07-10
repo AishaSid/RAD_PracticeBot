@@ -1,6 +1,8 @@
-# Gemini PDF Vector Store
+# Gemini PDF Summarizer
 
-A Streamlit application that demonstrates PDF document processing and question-answering using Google Gemini AI and vector embeddings (RAD).
+RAG -> Retrieval Augmented Generation
+
+It loads data from uploaded PDF and stores it in a vectore store for fast and relevant (data related to user query) data retrieval, then it uses an LLM (Gemini) to generate language to answer the user queries.  
 
 ## Overview
 

@@ -32,7 +32,7 @@ local_css("style.css")
 st.markdown("""
 <div class="main-container">
     <h1 class="main-title">Task Requirement Extraction Bot</h1>
-    <h2 class="main-subtitle">A simple RAD application</h2>
+    <h2 class="main-subtitle">A simple RAG application</h2>
     <p class="subtitle">Upload your project documents and extract key requirements with AI-powered analysis</p>
 </div>
 """, unsafe_allow_html=True)
